@@ -3,36 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>Archa Patel's Lab 4</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
-    <h1>Archa Patel's Lab 4</h1>
-  </body>
+    <body>
+        <h1>Archa Patel's Lab 4</h1>
+    
   
       <div class="container">
           
-          <form>
+          <form action="/api" method="post">
             <ul class="flex-outer">
                 <li>
-                  <label for="first-name">First Name</label>
-                  <input type="text" id="first-name" maxlength="140">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" maxlength="140">
                 </li>
                 <li>
-                  <label for="last-name">Last Name</label>
-                  <input type="text" id="last-name" maxlength="140">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" maxlength="140">
                 </li>
                 <li>
                   <label for="email">Email</label>
-                  <input type="text" id="email">
+                  <input type="email" id="email">
                 </li>
                 <li>
                   <label for="phone">Phone</label>
-                  <input type="text" id="phone">
+                  <input type="tel" id="phone">
                 </li>
                 <li>
-                  <label for="message">Text field</label>
-                  <textarea rows="5" cols="33"  id="text" placeholder="This is some default message text."></textarea>
-                </li>
+                    <label for="message">Text field</label>
+                    <textarea rows="5" cols="33" id="message" placeholder="This is some default message text."></textarea>  
+                </li>                
                 <li>
                     <p>Age</p>
                     <ul class="flex-inner">
@@ -50,7 +50,11 @@
                         </li>
                     </ul>
                 </li>
+                <li>
+                    <button type="submit">submit form</button>
+                </li>
+            </ul>
           </form>
       </div>
-
+    </body>
 </html>  
