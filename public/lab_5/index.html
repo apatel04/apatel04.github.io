@@ -52,9 +52,21 @@
                 </li>
                 <li>
                     <button type="submit" id="submit" name="submit">submit form</button>
+                    <button type="button" id="activate" name="activate" onclick="testFunction()">Activate</button>
                 </li>
             </ul>
           </form>
         </div>
+        <script>
+            function testFunction() {
+              const Title = document.querySelector('title');
+              console.log(Title);
+              Title.innerHTML = "Lab 5 for Archa Patel";
+              const Header = document.querySelector('h1');
+              console.log(Header);
+              Header.innerHTML = "Lab 5 for Archa Patel";
+              document.body.style.background = '#66CDAA';
+            }
+        </script>
     </body>
 </html>  

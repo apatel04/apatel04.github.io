@@ -29,6 +29,7 @@ body {
         text-transform: uppercase;
         letter-spacing: 1.2px;
         border-radius: 3px;
+        margin-right: 10px;
     }
 
     .flex-outer > li > label,
@@ -43,8 +44,9 @@ body {
     flex: 1 0 225px;
     }
 
-    .flex-inner li {
-        width: 80px;
+    .flex-inner li,
+    .checkbox-list-label {
+     width: 95px;
     }
 
     .flex-inner {
