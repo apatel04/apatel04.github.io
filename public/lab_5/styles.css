@@ -44,8 +44,7 @@ body {
     flex: 1 0 225px;
     }
 
-    .flex-inner li,
-    .checkbox-list-label {
+    .flex-inner li {
      width: 95px;
     }
 

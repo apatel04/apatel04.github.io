@@ -34,7 +34,7 @@
                     <textarea rows="5" cols="33" id="message" name="message" placeholder="This is some default message text."></textarea>  
                 </li>                
                 <li>
-                    <p>Age</p>
+                    <p class = checkbox-list-label>Age</p>
                     <ul class="flex-inner">
                         <li>
                             <input type="checkbox" id="eighteen-to-thirtyfive" name="eighteen-to-thirtyfive">
@@ -62,16 +62,25 @@
               const Title = document.querySelector('title');
               console.log(Title);
               Title.innerHTML = "Lab 5 for Archa Patel";
+              
               const Header = document.querySelector('h1');
               console.log(Header);
               Header.innerHTML = "Lab 5 for Archa Patel";
+
               document.body.style.background = '#66CDAA';
               document.querySelector(".flex-outer").style.cssText = 'margin:0 auto';
 
-              const ReplaceAgeP = document.querySelector('p');
+              const ReplaceAgeP = document.querySelector('.checkbox-list-label');
               console.log(ReplaceAgeP);
               ReplaceAgeP.innerHTML = 'Fruits';
-              
+
+              const Elements = document.querySelectorAll('.flex-inner li label');
+              const FruitArray = ['kiwi', 'dragonfruit', 'pomelo'];
+              Elements.forEach((el, i) => {
+                const text = el.innerText;
+                console.log(text);
+                el.innerText = FruitArray[i];})
+            
             }
         </script>
     </body>
