@@ -8,7 +8,7 @@ function range(int) {
   return arr;
 }
 
-function sortFunction(a, b, key) {
+function sortFunction(b, a, key) {
   if (a[key] < b[key]) {
     return -1;
   } if (a[key] > b[key]) {
@@ -16,6 +16,11 @@ function sortFunction(a, b, key) {
   }
   return 0;
 }
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
 
 document.body.addEventListener('submit', async (e) => {
   e.preventDefault(); // this stops whatever the browser wanted to do itself.
@@ -29,7 +34,8 @@ document.body.addEventListener('submit', async (e) => {
   })
     .then((fromServer) => fromServer.json())
     .then((fromServer) => {
-      // You're going to do your lab work in here. Replace this comment.
+      console.log(Math.floor(Math.random()*max.length));
+      console.log(range(1,10));
       console.log('fromServer', fromServer);
     })
     .catch((err) => console.log(err));
