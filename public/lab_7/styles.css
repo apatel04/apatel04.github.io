@@ -84,7 +84,7 @@ h1 {
   margin: 20px 50px;
   padding: 0 20px;
   min-height: 75px;
-  background-color: darkolivegreen;
+  background-color: rgb(110, 191, 211);
   color: white;
   display: flex;
   
@@ -98,7 +98,7 @@ h1 {
 }
 
 #chartContainer {
-    background: gray;
+    background: rgb(150, 120, 233);
     border: 2px dotted black;
     border-radius: 4px;
     height: 500px;
