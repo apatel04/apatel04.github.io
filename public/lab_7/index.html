@@ -6,33 +6,38 @@
     - Import script.js before your body closing tag
     - add a div with an id of chartContainer
 -->
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
       <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Archa Patel's Lab 7</title>
-      <link rel="stylesheet" href="styles.css">
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <script 
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+        crossorigin="anonymous"
+      ></script>
     </head>
 
     <body>
-        <h1>Archa Patel's Lab 7</h1>
-        <div id="chartContainer" style="height: 300px; width: 100%;">
-        <form>
-            <button
-                type="submit"
-                class="submitButton"
-                name="submitButton"
-            >Where Should We Eat</button>
-        </form>
+        <div class="wrapper">
+            <div class="container flex-outer">
+                <div class="header">
+                    <h1>Archa Patel's Lab 7</h1></div>
+                <div id="chartContainer" style="width: 100%;">
+                </div>
+                <form>
+                    <button
+                        type="submit"
+                        class="submitButton"
+                        name="submitButton"
+                    >Where Should We Eat</button>
+                </form>
+            </div>
         </div>
-        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        <script src="canvasjs.min.js"></script>
         <script src="script.js"></script>
     </body>
 
-
-    - TRY THIS: type "doc" at the top of this file and press "tab" for Emmet autocomplete support
--->
-
-
+</html>

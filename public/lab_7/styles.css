@@ -46,7 +46,7 @@ body {
 }
 
 .flex-outer button {
-  background-color: darkolivegreen;
+  background-color: rgb(110, 191, 211);
   color: white;
   padding: 6px 12px;
   border: none;
