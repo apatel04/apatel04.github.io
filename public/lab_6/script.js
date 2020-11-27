@@ -11,7 +11,7 @@ function range(int) {
 function sortFunction(b, a, key) {
   if (a[key] < b[key]) {
     return -1;
-  } if (a[key] > b[key]) {
+  } if (org[key] > comparison[key]) {
     return 1;
   }
   return 0;
@@ -26,6 +26,7 @@ function getRandomIntInclusive(min, max) {
 document.body.addEventListener('submit', async (e) => {
   e.preventDefault(); // this stops whatever the browser wanted to do itself.
   const form = $(e.target).serializeArray(); // here we're using jQuery to serialize the form
+  // set fave to yes
   fetch('/api', {
     method: 'POST',
     headers: {
@@ -55,5 +56,8 @@ document.body.addEventListener('submit', async (e) => {
         $(ol).append(li);
       });
     })
-    .catch((err) => console.log(err));
+    .catch((err) => {
+      console.log(err)
+      // set fave to no
+    });
 });

@@ -23,7 +23,7 @@ app.use((req, res, next) => {
 });
 
 app.route('/api')
-  .get((req, res) => {
+  .get(async (req, res) => {
     console.log('GET request detected');
     console.log('fetch request data', json);
     //res.send(`Lab 5 for ${process.env.NAME}`);
